@@ -50,7 +50,6 @@ jobs:
             targets="${targets} modules"
           fi
           echo "targets=${targets}" >> $GITHUB_OUTPUT
-      - uses: actions/checkout@v6
       - uses: actions/cache/restore@v4
         id: restore-cached-kernel
         with:
